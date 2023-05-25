@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning HTML</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <ul class="nav">
+          <li class="nav-list active"><a href="/">Home</a></li>
+          <li class="nav-list"><a href="/">About</a></li>
+          <li class="nav-list"><a href="/">Service</a></li>
+          <li class="nav-list"><a href="/">Blog</a></li>
+          <li class="nav-list"><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="display-element">
+        <h1 class="test">Heading Block Element</h1>
+        <a href="/" class="test">Anchor Inline Element</a>
+        <ul>
+          <li class="test">Li Block Element</li>
+          <span class="test">Span Inline Element</span>
+        </ul>
+      </section>
+
+      <section id="images-structure">
+        <!-- File foto sejajar dengan file index.html -->
+        <img src="profile.jpg" alt="Gita" width="250" height="200" />
+
+        <!-- File foto diluar dari file index.html -->
+        <img src="../assets/profile.jpg" alt="Gita" width="250" height="200" />
+      </section>
+
+      <section id="important-text">
+        <!-- Important Text -->
+        <p>
+          Ini adalah <strong>Bold</strong>, <i>Italic</i>, <s>Strike</s>, dan
+          <u>Underline</u>
+        </p>
+      </section>
+
+      <section id="articles">
+        <article>
+          <h1>Heading Blog</h1>
+          <p>Description blog must be required</p>
+        </article>
+      </section>
+
+      <section id="table-contents">
+        <table border="1">
+          <thead>
+            <tr>
+              <th rowspan="2">Heading Name</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">Data Nama</td>
+              <td>This is description</td>
+              <td>
+                <a href="#">Detail</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside>
+        <section id="sidebar">
+          <h1>Sidebar</h1>
+          <ul>
+            <li>Popular</li>
+          </ul>
+        </section>
+      </aside>
+
+      <div>General using with css</div>
+
+      <section id="formulir" style="background-color: darkolivegreen">
+        <form action="#">
+          <label
+            for="username"
+            style="
+              color: white;
+              font-size: large;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+            >Username :</label
+          >
+          <br />
+          <input type="text" id="username" placeholder="example" />
+          <br />
+          <label for="password">Password :</label>
+          <br />
+          <input type="password" id="password" placeholder="**********" />
+          <br />
+          <label for="age">Age :</label>
+          <br />
+          <select name="age" id="age">
+            <option value="">Chooise</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <label for="description">Description :</label>
+          <br />
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Deskripsikan dirimu!"
+          ></textarea>
+          <label for="color">Warna :</label>
+          <br />
+          <input type="color" id="color" />
+          <button type="submit">Register!</button>
+        </form>
+      </section>
+
+      <section id="media">
+        <!-- Video -->
+        <video width="200" height="200" controls>
+          <source src="https://youtu.be/QGJuMBdaqIw" type="video/mp4" />
+        </video>
+
+        <!-- Audio -->
+        <audio controls>
+          <source src="url" type="audio/mpeg" />
+        </audio>
+
+        <!-- Youtube -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/QGJuMBdaqIw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>&copy; 2023. Design by Dakasakti</footer>
+  </body>
+</html>
