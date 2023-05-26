@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todolist</title>
+    <link rel="stylesheet" href="./assets/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>My Todolist</h2>
+      <p>Double click an item to mark it complete</p>
+      <form>
+        <input
+          id="name"
+          class="form-control"
+          type="text"
+          placeholder="example todo"
+        />
+        <button class="btn dark-green" id="btn">Add</button>
+      </form>
+
+      <section class="mt-25">
+        <div class="action-control">
+          <button class="btn dark-cyan" onclick="clearCompleted()">
+            Clear Completed
+          </button>
+          <button class="btn dark-red" onclick="emptyList()">Empty List</button>
+          <button class="btn dark-green" onclick="saveList()">Save List</button>
+        </div>
+      </section>
+
+      <section class="mt-25">
+        <h2>Results</h2>
+        <ol class="list" id="list"></ol>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
