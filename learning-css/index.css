@@ -1,0 +1,187 @@
+/* Reset Default */
+* {
+  /* every element the different */
+  margin: 0;
+  padding: 0;
+
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 10px;
+}
+
+/* Section1 */
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid;
+
+  /* problem */
+  height: 50px;
+
+  /* fixing */
+  height: min-content;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* Section2 */
+.awesome {
+  /* perubahan bentuk text */
+  text-transform: uppercase;
+
+  /* besaran text */
+  font-size: 5rem;
+
+  /* ketebalan text */
+  font-weight: 700;
+
+  /* spacing tinggi text */
+  line-height: 1;
+  border: 5px solid;
+  padding: 2rem;
+
+  /* Intrinsic dan Extrinsic */
+  /* problem */
+  width: 320px;
+
+  /* fixing */
+  width: min-content;
+}
+
+[data-element] {
+  /* warna */
+  color: darkcyan;
+}
+
+[data-element="awesome"] {
+  color: green;
+}
+
+/* Section3 */
+article p:first-of-type {
+  color: red;
+  font-size: 1.5em;
+}
+
+/* Section4 */
+.test {
+  /* text berada di tengah */
+  text-align: center;
+  border: 1px solid;
+  padding: 10px;
+  width: 150px;
+}
+
+.block {
+  display: block;
+}
+
+/* Section6 */
+.box-1 {
+  /* panjang */
+  width: 150px;
+
+  /* lebar */
+  height: 150px;
+}
+
+.box-2 {
+  width: 100px;
+  height: 100px;
+}
+
+.bg-green {
+  /* warna latar belakang */
+  background-color: darkgreen;
+}
+
+.bg-red {
+  background-color: darkred;
+}
+
+/* margin */
+.mt-10 {
+  /* pergeseran dari titik 0 ke arah bawah */
+  margin-top: 10px;
+}
+
+.mr-10 {
+  /* pergeseran dari titik border ke arah kanan */
+  margin-right: 10px;
+}
+
+.mb-10 {
+  /* pergeseran dari titik border ke arah bawah */
+  margin-bottom: 10px;
+}
+
+.ml-10 {
+  /* pergeseran dari titik 0 ke arah kanan */
+  margin-left: 10px;
+}
+
+.-ml-10 {
+  /* pergeseran dari titik 0 ke arah kiri */
+  margin-left: -10px;
+}
+
+.inline-block {
+  /* digunakan langsung di elementnya */
+  /* ada spacing defaultnya ketika disamping */
+  display: inline-block;
+}
+
+.flex {
+  /* digunakan di parrent element */
+  /* tanpa spacing ketika disamping */
+  display: flex;
+}
+
+/* padding */
+.pt-10 {
+  /* pergeseran dari titik border atas ke arah content */
+  padding-top: 10px;
+}
+
+.pr-10 {
+  /* pergeseran dari titik border kanan ke arah content */
+  padding-right: 10px;
+}
+
+.pb-10 {
+  /* pergeseran dari titik border bawah ke arah content */
+  padding-bottom: 10px;
+}
+
+.pl-10 {
+  /* pergeseran dari titik border kiri ke arah content */
+  padding-left: 10px;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* checking batas margin */
+.check-margin {
+  width: 160px;
+  height: 150px;
+  border: 1px solid red;
+}
+
+.relative {
+  /* parent element */
+  position: relative;
+}
+
+.absolute {
+  /* child element */
+  position: absolute;
+}

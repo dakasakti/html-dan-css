@@ -1,0 +1,34 @@
+.button {
+  border: 1px solid gray;
+  background-color: green;
+  transition: all 0.7s ease-out;
+}
+
+.button:hover {
+  /* diabaikan */
+  background-color: greenyellow;
+
+  /* diutamakan */
+  background-color: darkgreen;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+/* Specificity */
+h1 {
+  color: #3740ff;
+}
+
+.heading {
+  color: darkgreen;
+}
+
+[element] {
+  color: darkgoldenrod;
+}
+
+#heading {
+  color: darkred;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- section1 -->
+    <h1 class="mt-20">Box Model</h1>
+    <p class="box">
+      Saya adalah sebuah paragraf yang diisi dengan text namun kelebihan
+    </p>
+
+    <!-- section2 -->
+    <p class="mt-20 awesome" data-element="awesome" ketika>CSS is Awesome</p>
+
+    <!-- section3 -->
+    <article class="mt-20">
+      <p>Paragraf ini Harus distyle</p>
+      <p>Paragraf ini biarkan saja!</p>
+    </article>
+
+    <!-- section4 -->
+    <section class="mt-20">
+      <div class="test">This is block</div>
+      <span class="test block">This is inline</span>
+      <button class="test">This is Inline Block</button>
+      <!-- kenapa style inline block tapi element selanjutnya dibawah tidak disampingnya? -->
+      <!-- karena element selanjutnya sifatnya block, jika inline atau inline-block pasti disamping!-->
+      <!-- Silahkan uncomment contoh dibawah ini -->
+      <!-- <span class="test">This is inline</span> -->
+      <p class="test">This is block</p>
+    </section>
+
+    <!-- section6 -->
+    <section class="mt-20">
+      <!-- div => block => inline-block => agar bisa disamping -->
+      <div class="relative box-1 bg-green inline-block mr-10">
+        <!-- margin => menggeser element dari titik awal (0) ke arah yang sesuai -->
+        <div class="absolute check-margin"></div>
+        <div class="box-2 bg-red text-center">Margin</div>
+      </div>
+
+      <div class="relative box-1 bg-green inline-block ml-10">
+        <!-- margin bisa bersifat minus -->
+        <div class="absolute check-margin -ml-10"></div>
+        <div class="box-2 bg-red text-center">Margin</div>
+      </div>
+    </section>
+
+    <section class="mt-20 flex">
+      <!-- membuat element disamping dengan flex tanpa spacing -->
+      <div class="relative box-1 bg-green mr-10">
+        <div class="absolute check-margin"></div>
+        <div class="box-2 bg-red text-center">Margin</div>
+      </div>
+
+      <div class="relative box-1 bg-green ml-10">
+        <div class="absolute check-margin -ml-10"></div>
+        <div class="box-2 bg-red text-center">Margin</div>
+      </div>
+    </section>
+
+    <!-- section7 -->
+    <section class="mt-20">
+      <div class="box-1 bg-green pl-10 pt-10">
+        <!-- padding => menggeser element dari border ke dalam (arah content) -->
+        <div class="box-2 bg-red pl-10 pt-10">Padding</div>
+      </div>
+    </section>
+  </body>
+</html>

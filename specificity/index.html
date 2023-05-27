@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- diabaikan -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- diutamakan -->
+    <link
+      rel="stylesheet"
+      href="https://codepen.io/web-dot-dev/pen/abpoXGZ.css"
+    />
+  </head>
+  <body>
+    <!-- section5 -->
+    <section>
+      <div class="wrapper">
+        <article class="flow">
+          <h1>Cascade Position Order</h1>
+          <figure class="callout">
+            <p>
+              The code <code>&lt;style&gt;</code> element is declared in the
+              <code>&lt;head&gt;</code>, while the
+              <code>&lt;link&gt;</code> element is declared in the
+              <code>&lt;body&gt;</code>. This means the
+              <code>&lt;link&gt;</code> get more spectificity than the
+              <code>&lt;style&gt;</code> element and the blue hex code
+              <code>#3740ff</code> is applied to the button's background.
+            </p>
+          </figure>
+          <button class="button">
+            My background has been set by the second link element
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- section6 -->
+    <section class="mt-25 wrapper">
+      <h1>First Element</h1>
+      <h1 class="heading">Second Element with Class</h1>
+      <h1 class="heading" element>Third Element with Class and Attribute</h1>
+      <h1 class="heading" element id="heading">
+        Fourth Element with Class, Attribute and Id
+      </h1>
+    </section>
+  </body>
+</html>
