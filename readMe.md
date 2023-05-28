@@ -80,6 +80,8 @@
 
 memberikan design, membuat bentuk, serta mengubah tampilan halaman sebuah website.
 
+[Learning](https://web.dev/learn/css/)
+
 ## Syntax Basic CSS
 
 ```
@@ -253,3 +255,81 @@ Urutan browser memilih style (overriding)
 - HTML Spacing (`<br/>` or `<hr/>`)
 - Margin => (all), (top-bottom, left-right), (top, left-right, bottom), (top, right, bottom, left)
 - Padding => Same as margin
+
+## Positioning
+
+- Relative => mempertahankan tempatnya di flow dokumen
+- Absolute => mendasarkan posisinya dari parent yang relative
+- Fixed => mendasarkan posisinya terhadap viewport
+- Sticky => hanya akan menerapkan nilai arah saat berada dalam status dock/stay
+
+ketika memakai positioning ini akan membuka property (top, left, right, bottom)
+
+## Keyword
+
+- Inherit (Default)
+- Initial
+- Unset
+
+## Color
+
+[Link 1](https://palettes.shecodes.io/)
+[Link 2](https://www.imgonline.com.ua/eng/color-palette.php)
+[Link 3](https://hypercolor.dev/)
+
+- Hexadecimal (HEX) => (#155263)
+- Red Green Blue => (rgb(255, 111, 60))
+- Hue Saturation Lightness => (hsl(29, 100%, 62%))
+- Name => (gold)
+
+## Pseudo Elements (::)
+
+menambahkan atau menargetkan element tambahan tanpa harus menambahkan lebih banyak tag HTML
+
+### (::first-letter)
+
+hanya digunakan di block
+
+- Color
+- Background
+- Border
+- Float
+- Font Properties (font-size, font-weight)
+- Text Properties (text-decoration, word-spacing)
+
+### (::first-line)
+
+like as `::first-letter
+
+### (::before and ::after)
+
+```
+selector::before {
+  content: "";
+}
+
+selector::after {
+  content: "";
+}
+```
+
+### (::marker)
+
+- Color
+- Content
+- White-Space
+- Font Properties
+- Animation dan Transition Properties
+
+### (::selection)
+
+- Color
+- Background Color
+- Text
+
+### (::placeholder)
+
+- Color
+- Background
+- Font
+- Text

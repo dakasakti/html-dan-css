@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- section1 -->
-    <h1 class="mt-20">Box Model</h1>
+    <h1 class="mt-20" id="box-model">Box Model</h1>
     <p class="box">
       Saya adalah sebuah paragraf yang diisi dengan text namun kelebihan
     </p>
@@ -71,5 +71,89 @@
         <div class="box-2 bg-red pl-10 pt-10">Padding</div>
       </div>
     </section>
+
+    <!-- section8 -->
+    <section class="mt-20">
+      <div class="relative box-1 bg-green">
+        <div class="box-header">Heading</div>
+        <div class="absolute box-back-top">.</div>
+      </div>
+    </section>
+
+    <!-- section9 -->
+    <section class="relative">
+      <a href="#box-model">
+        <div class="absolute back-to-top">
+          <span class="absolute center text-decoration-none text-white text-2xl"
+            >&uarr;</span
+          >
+        </div>
+      </a>
+    </section>
+
+    <!-- section10 -->
+    <section class="mt-20">
+      <div class="inherit">
+        Ini Text Biasa.
+        <strong>Ini Text strong diubah ke text biasa</strong>
+      </div>
+    </section>
+
+    <section class="mt-20">
+      <div class="initial">
+        Ini Text Biasa.
+        <strong>Ini Text strong diubah ke text biasa</strong>
+      </div>
+    </section>
+
+    <section class="mt-20">
+      <div class="unset">
+        Ini Text Biasa.
+        <strong>Ini Text strong diubah ke text biasa</strong>
+      </div>
+    </section>
+
+    <!-- section11 -->
+    <section class="mt-20">
+      <div class="w-full h-50 bg-blue-hex"></div>
+    </section>
+
+    <section class="mt-20">
+      <div class="w-full h-50 bg-darkorange-rgb"></div>
+    </section>
+
+    <section class="mt-20">
+      <div class="w-full h-50 bg-orange-hsl"></div>
+    </section>
+
+    <section class="mt-20">
+      <div class="w-full h-50 bg-yellow"></div>
+    </section>
+
+    <!-- gradient -->
+    <section class="mt-20">
+      <div class="w-full h-50 bg-gradient"></div>
+    </section>
+
+    <!-- section12 -->
+    <section class="mt-20">
+      <p class="first">First Letter</p>
+      <hr />
+      <p class="mix">Before and After</p>
+      <hr class="mt-20" />
+      <p class="line">Hanya Baris Pertama<br />Kedua dan seterusnya normal</p>
+      <hr />
+      <details>
+        <summary>Test This is Summary</summary>
+        <p class="paragraph">This is paragraph from summary</p>
+      </details>
+      <hr />
+      <p>Selection change the color is white and background green</p>
+      <hr />
+      <input type="text" placeholder="example color" />
+    </section>
+
+    <!-- finally -->
+    <div class="mb-50"></div>
   </body>
 </html>
