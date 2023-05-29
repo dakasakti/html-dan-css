@@ -333,3 +333,68 @@ selector::after {
 - Background
 - Font
 - Text
+
+## Pseudo Classes (:)
+
+memungkinkan kita menerapkan css berdasarkan perubahan status
+
+### Interactive States
+
+- Hover => saat cursor berada diatas element
+- Active => saat diklik dan sebelum dilepaskan
+- Focus => output ketika diklik (mouse)
+- Focus Visible => like as focus (keyboard)
+- Target => like as focus but more generally
+
+### Historic States
+
+- Link (`<a>`) => warna link sebelum dikunjungi
+- Visited (`<a>`) => warna setelah dikunjungi
+
+```
+color, background-color, border-color, outline-color, fill dan stroke dari SVG
+
+// notes
+=> Link, Visited, Hover, Active (LVHA)
+```
+
+### Form States
+
+- disabled
+- enabled
+- checked
+- valid
+- invalid
+- required
+- optional
+
+### Element Index and Order
+
+- First Child
+- Last Child
+- Only Child
+- First of Type
+- Only of Type
+- Nth Child (number/even/odd)
+
+### Empty States (:empty)
+
+## Sizing Unit
+
+- Percen (%) => width from parent element
+- Em => relative to the font-size of parent element
+- Viewport Height (vh) => 1% from of view height
+- Pixel (px) => absolute length in pixel
+- rem => relative to the font-size of root element
+- Viewport Width (vw) => 1% from of view width
+
+```
+// calculated
+100% (1)
+```
+
+## Layouts
+
+- Display Property (Inline dan Block)
+- Flexbox dan Grid
+- Flow Layout
