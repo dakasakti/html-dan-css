@@ -398,3 +398,30 @@ color, background-color, border-color, outline-color, fill dan stroke dari SVG
 - Display Property (Inline dan Block)
 - Flexbox dan Grid
 - Flow Layout
+
+### Float (Melayang => left or right)
+
+### Multi Column
+
+## Border Properties
+
+### Border Style
+
+- Dotted
+- Dashed
+- Solid
+- Double
+- Groove
+- Ridge
+- Inset
+- Outset
+
+### Logical Properties
+
+- LTR and RTL
+
+### Border Radius (Rounded)
+
+### Border Images
+
+- Images-Repeat (stretch, repeat, round, space)
