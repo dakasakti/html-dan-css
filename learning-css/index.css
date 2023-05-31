@@ -8,8 +8,9 @@
   box-sizing: border-box;
 }
 
-body {
-  margin-left: 10px;
+.container {
+  width: 80%;
+  margin: auto;
 }
 
 /* Section1 */
@@ -328,7 +329,7 @@ html {
   width: 2.2em;
   height: 2.2em;
   position: absolute;
-  left: 5px;
+  left: 120px;
 }
 
 .mix::after {
@@ -338,7 +339,7 @@ html {
   width: 2.2em;
   height: 2.2em;
   position: absolute;
-  right: 5px;
+  right: 110px;
 }
 
 .line::first-line {
@@ -502,11 +503,6 @@ textarea:focus {
 
 /* layouts */
 /* flex */
-.container {
-  width: 80%;
-  margin: auto;
-}
-
 .flex {
   display: flex;
 
@@ -675,6 +671,171 @@ textarea:focus {
   border: 15px solid;
   border-image-source: url("../assets/profile.jpg");
   border-image-slice: 61 58 51 48;
+}
+
+/* shadow */
+.mt-50 {
+  margin-top: 50px;
+}
+
+.box-shadow {
+  box-shadow: 10px 10px 5px 0px #155263;
+}
+
+.box-shadows {
+  box-shadow: 5px 5px 20px 5px darkslateblue, -5px -5px 20px 5px dodgerblue,
+    inset 0px 0px 10px 2px darkslategray, inset 0px 0px 20px 10px steelblue;
+}
+
+.box-setting {
+  width: min-content;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(0 0 0 / 0.7);
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 3px goldenrod;
+}
+
+.text-shadows {
+  text-shadow: -3px -3px 3px darkgrey, 3px 3px 3px goldenrod;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.image {
+  width: 250px;
+}
+
+figure img {
+  filter: drop-shadow(0px 0px 15px firebrick);
+}
+
+/* focus */
+a:focus {
+  outline: 2px solid #155263;
+}
+
+.none {
+  display: none;
+}
+
+:focus-within .none {
+  display: block;
+}
+
+/* z-index */
+.border-index {
+  border: 1px solid;
+}
+
+.mtl-25 {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.mtl-50 {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.z-index {
+  /* border: 1px solid; */
+  width: 100%;
+  height: 350px;
+}
+
+.box-index {
+  width: 250px;
+  height: 250px;
+}
+
+.bg-light-red {
+  background: #ef4444;
+}
+
+.bg-pink {
+  background: #ec4899;
+}
+
+.z-index-1 {
+  /* change the stack */
+  z-index: 1;
+}
+
+.z-index-2 {
+  /* change the stack */
+  z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+/* z-index negatif */
+.z-index-0 {
+  z-index: 0;
+}
+
+.-z-index-1 {
+  /* change the stack */
+  z-index: -1;
+}
+
+.-z-index-2 {
+  /* change the stack */
+  z-index: -2;
+}
+
+.-z-index-3 {
+  z-index: -3;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.w-100 {
+  width: 100px;
+}
+
+.h-200 {
+  height: 200px;
+}
+
+.h-100 {
+  height: 100px;
+}
+
+/* stacking context */
+.top,
+.bottom {
+  width: 250px;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.inner {
+  padding: 20px;
+}
+
+.box-pink {
+  background: #ec4899;
+  position: absolute;
+  border: 5px solid white;
+  height: 100px;
+}
+
+.z-index-999 {
+  z-index: 999;
 }
 
 .mb-50 {

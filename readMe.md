@@ -425,3 +425,26 @@ color, background-color, border-color, outline-color, fill dan stroke dari SVG
 ### Border Images
 
 - Images-Repeat (stretch, repeat, round, space)
+
+## Shadows
+
+- Box (inset (optional), x-offset, y-offset, blur-radius, spread-radius (optional), color)
+- Text (x-offset, y-offset, blur-radius, color)
+- Drop (x-offset, y-offset, blur-radius, color)
+
+## Focus
+
+Focus element otomatis => element form, button, dan tautan
+
+- `tabindex="0"`
+
+### Style Focus
+
+- focus
+- focus-within
+- focus-visible
+
+## Z-Index (stack => tumpukan)
+
+- parent 1 dengan parent 2 berbeda stack
+- berfungsi sesama child dari parentnya (stacking context)

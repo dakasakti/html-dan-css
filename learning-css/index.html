@@ -7,221 +7,228 @@
     <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="container">
     <!-- section1 -->
-    <h1 class="mt-20" id="box-model">Box Model</h1>
-    <p class="box">
-      Saya adalah sebuah paragraf yang diisi dengan text namun kelebihan
-    </p>
+    <section id="box-model">
+      <h1 class="mt-20">Box Model</h1>
+      <p class="box">
+        Saya adalah sebuah paragraf yang diisi dengan text namun kelebihan
+      </p>
+    </section>
 
     <!-- section2 -->
-    <p class="mt-20 awesome" data-element="awesome" ketika>CSS is Awesome</p>
+    <section id="awesome">
+      <p class="mt-20 awesome" data-element="awesome" ketika>CSS is Awesome</p>
+    </section>
 
     <!-- section3 -->
-    <article class="mt-20">
-      <p>Paragraf ini Harus distyle</p>
-      <p>Paragraf ini biarkan saja!</p>
-    </article>
+    <section id="paragraf">
+      <article class="mt-20">
+        <p>Paragraf ini Harus distyle</p>
+        <p>Paragraf ini biarkan saja!</p>
+      </article>
+    </section>
 
     <!-- section4 -->
-    <section class="mt-20">
-      <div class="test">This is block</div>
-      <span class="test block">This is inline</span>
-      <button class="test">This is Inline Block</button>
-      <!-- kenapa style inline block tapi element selanjutnya dibawah tidak disampingnya? -->
-      <!-- karena element selanjutnya sifatnya block, jika inline atau inline-block pasti disamping!-->
-      <!-- Silahkan uncomment contoh dibawah ini -->
-      <!-- <span class="test">This is inline</span> -->
-      <p class="test">This is block</p>
+    <section id="displays">
+      <div class="mt-20">
+        <div class="test">This is block</div>
+        <span class="test block">This is inline</span>
+        <button class="test">This is Inline Block</button>
+        <!-- kenapa style inline block tapi element selanjutnya dibawah tidak disampingnya? -->
+        <!-- karena element selanjutnya sifatnya block, jika inline atau inline-block pasti disamping!-->
+        <!-- Silahkan uncomment contoh dibawah ini -->
+        <!-- <span class="test">This is inline</span> -->
+        <p class="test">This is block</p>
+      </div>
     </section>
 
     <!-- section6 -->
-    <section class="mt-20">
-      <!-- div => block => inline-block => agar bisa disamping -->
-      <div class="relative box-1 bg-green inline-block mr-10">
-        <!-- margin => menggeser element dari titik awal (0) ke arah yang sesuai -->
-        <div class="absolute check-margin"></div>
-        <div class="box-2 bg-red text-center">Margin</div>
-      </div>
-
-      <div class="relative box-1 bg-green inline-block ml-10">
-        <!-- margin bisa bersifat minus -->
-        <div class="absolute check-margin -ml-10"></div>
-        <div class="box-2 bg-red text-center">Margin</div>
-      </div>
-    </section>
-
-    <section class="mt-20 flex">
-      <!-- membuat element disamping dengan flex tanpa spacing -->
-      <div class="relative box-1 bg-green mr-10">
-        <div class="absolute check-margin"></div>
-        <div class="box-2 bg-red text-center">Margin</div>
-      </div>
-
-      <div class="relative box-1 bg-green ml-10">
-        <div class="absolute check-margin -ml-10"></div>
-        <div class="box-2 bg-red text-center">Margin</div>
-      </div>
-    </section>
-
-    <!-- section7 -->
-    <section class="mt-20">
-      <div class="box-1 bg-green pl-10 pt-10">
-        <!-- padding => menggeser element dari border ke dalam (arah content) -->
-        <div class="box-2 bg-red pl-10 pt-10">Padding</div>
-      </div>
-    </section>
-
-    <!-- section8 -->
-    <section class="mt-20">
-      <div class="relative box-1 bg-green">
-        <div class="box-header">Heading</div>
-        <div class="absolute box-back-top">.</div>
-      </div>
-    </section>
-
-    <!-- section9 -->
-    <section class="relative">
-      <a href="#box-model">
-        <div class="absolute back-to-top">
-          <span class="absolute center text-decoration-none text-white text-2xl"
-            >&uarr;</span
-          >
+    <section id="positioning">
+      <div class="mt-20">
+        <!-- div => block => inline-block => agar bisa disamping -->
+        <div class="relative box-1 bg-green inline-block mr-10">
+          <!-- margin => menggeser element dari titik awal (0) ke arah yang sesuai -->
+          <div class="absolute check-margin"></div>
+          <div class="box-2 bg-red text-center">Margin</div>
         </div>
-      </a>
+
+        <div class="relative box-1 bg-green inline-block ml-10">
+          <!-- margin bisa bersifat minus -->
+          <div class="absolute check-margin -ml-10"></div>
+          <div class="box-2 bg-red text-center">Margin</div>
+        </div>
+      </div>
+
+      <div class="mt-20 flex">
+        <!-- membuat element disamping dengan flex tanpa spacing -->
+        <div class="relative box-1 bg-green mr-10">
+          <div class="absolute check-margin"></div>
+          <div class="box-2 bg-red text-center">Margin</div>
+        </div>
+
+        <div class="relative box-1 bg-green ml-10">
+          <div class="absolute check-margin -ml-10"></div>
+          <div class="box-2 bg-red text-center">Margin</div>
+        </div>
+      </div>
+
+      <!-- section7 -->
+      <div class="mt-20">
+        <div class="box-1 bg-green pl-10 pt-10">
+          <!-- padding => menggeser element dari border ke dalam (arah content) -->
+          <div class="box-2 bg-red pl-10 pt-10">Padding</div>
+        </div>
+      </div>
+
+      <!-- section8 -->
+      <div class="mt-20">
+        <div class="relative box-1 bg-green">
+          <div class="box-header">Heading</div>
+          <div class="absolute box-back-top">.</div>
+        </div>
+      </div>
+
+      <!-- section9 -->
+      <div class="relative">
+        <a href="#box-model">
+          <div class="absolute back-to-top">
+            <span
+              class="absolute center text-decoration-none text-white text-2xl"
+              >&uarr;</span
+            >
+          </div>
+        </a>
+      </div>
     </section>
 
     <!-- section10 -->
-    <section class="mt-20">
-      <div class="inherit">
+    <section id="keyword">
+      <div class="mt-20 inherit">
         Ini Text Biasa.
         <strong>Ini Text strong diubah ke text biasa</strong>
       </div>
-    </section>
 
-    <section class="mt-20">
-      <div class="initial">
+      <div class="mt-20 initial">
         Ini Text Biasa.
         <strong>Ini Text strong diubah ke text biasa</strong>
       </div>
-    </section>
 
-    <section class="mt-20">
-      <div class="unset">
+      <div class="mt-20 unset">
         Ini Text Biasa.
         <strong>Ini Text strong diubah ke text biasa</strong>
       </div>
     </section>
 
     <!-- section11 -->
-    <section class="mt-20">
-      <div class="w-full h-50 bg-blue-hex"></div>
-    </section>
+    <section id="color">
+      <div class="mt-20 w-full h-50 bg-blue-hex"></div>
+      <div class="mt-20 w-full h-50 bg-darkorange-rgb"></div>
+      <div class="mt-20 w-full h-50 bg-orange-hsl"></div>
+      <div class="mt-20 w-full h-50 bg-yellow"></div>
 
-    <section class="mt-20">
-      <div class="w-full h-50 bg-darkorange-rgb"></div>
-    </section>
-
-    <section class="mt-20">
-      <div class="w-full h-50 bg-orange-hsl"></div>
-    </section>
-
-    <section class="mt-20">
-      <div class="w-full h-50 bg-yellow"></div>
-    </section>
-
-    <!-- gradient -->
-    <section class="mt-20">
-      <div class="w-full h-50 bg-gradient"></div>
+      <!-- gradient -->
+      <div class="mt-20 w-full h-50 bg-gradient"></div>
     </section>
 
     <!-- section12 -->
-    <section class="mt-20">
-      <p class="first">First Letter</p>
-      <hr />
-      <p class="mix">Before and After</p>
-      <hr class="mt-20" />
-      <p class="line">Hanya Baris Pertama<br />Kedua dan seterusnya normal</p>
-      <hr />
-      <details>
-        <summary>Test This is Summary</summary>
-        <p class="paragraph">This is paragraph from summary</p>
-      </details>
-      <hr />
-      <p>Selection change the color is white and background green</p>
-      <hr />
-      <input type="text" placeholder="example color" />
-      <hr />
+    <section id="pseudo-elements">
+      <div class="mt-10">
+        <p class="first">First Letter</p>
+        <hr />
+        <p class="mix">Before and After</p>
+        <hr class="mt-20" />
+        <p class="line">Hanya Baris Pertama<br />Kedua dan seterusnya normal</p>
+        <hr />
+        <details>
+          <summary>Test This is Summary</summary>
+          <p class="paragraph">This is paragraph from summary</p>
+        </details>
+        <hr />
+        <p>Selection change the color is white and background green</p>
+        <hr />
+        <input type="text" placeholder="example color" />
+        <hr />
+      </div>
     </section>
 
     <!-- section13 -->
-    <section class="mt-10">
-      <a href="#box-model"><button class="btn">Back to Top</button></a>
-      <a href="#click"><button class="btn click">Click and See</button></a>
-      <ul class="mt-10">
-        <li><a href="#test1">Click this link will change the color</a></li>
-        <li><a href="#test2">Test 2</a></li>
-        <li><a href="#test3">Test 3</a></li>
-      </ul>
-      <div class="mt-20">
-        <h1 id="test1">Reference Title with Link 1</h1>
-        <h1 id="test2">Reference Title with Link 2</h1>
-        <h1 id="test3">Reference Title with Link 3</h1>
-      </div>
-      <hr class="my-10" />
-      <button disabled>Button Disabled</button>
-      <button>Button Default</button>
+    <section id="pseudo-classes">
       <div class="mt-10">
-        <div>
-          <label for="male">
-            <input type="checkbox" id="male" />
-            <span>Male</span>
-          </label>
+        <a href="#box-model"><button class="btn">Back to Top</button></a>
+        <a href="#click"><button class="btn click">Click and See</button></a>
+        <ul class="mt-10">
+          <li><a href="#test1">Click this link will change the color</a></li>
+          <li><a href="#test2">Test 2</a></li>
+          <li><a href="#test3">Test 3</a></li>
+        </ul>
+        <div class="mt-20">
+          <h1 id="test1">Reference Title with Link 1</h1>
+          <h1 id="test2">Reference Title with Link 2</h1>
+          <h1 id="test3">Reference Title with Link 3</h1>
         </div>
-        <div>
-          <label for="female">
-            <input type="checkbox" id="female" />
-            <span>Female</span>
-          </label>
+        <hr class="my-10" />
+        <button disabled>Button Disabled</button>
+        <button>Button Default</button>
+        <div class="mt-10">
+          <div>
+            <label for="male">
+              <input type="checkbox" id="male" />
+              <span>Male</span>
+            </label>
+          </div>
+          <div>
+            <label for="female">
+              <input type="checkbox" id="female" />
+              <span>Female</span>
+            </label>
+          </div>
         </div>
-      </div>
-      <input type="email" placeholder="email" required />
-      <input type="text" placeholder="password" required />
-      <input type="number" placeholder="code" min="1" max="10" />
-      <hr />
-      <h2>Editor Code</h2>
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-    </section>
-
-    <section class="mt-20">
-      <h1 class="text-center mb-10">Learning Layouts</h1>
-      <h2 class="text-center mb-10">Flex</h2>
-      <div class="flex container">
-        <!-- secara default direction row -->
-        <div class="main mr-10">Tata Letak Main</div>
-        <div class="sidebar ml-10">Tata Letak Sidebar Right</div>
-      </div>
-
-      <h2 class="text-center my-10">Grid</h2>
-      <div class="grid container">
-        <div class="grid-box">1</div>
-        <div class="grid-box-2">2</div>
-        <div class="grid-box-1">3</div>
-        <div class="grid-box-2">4</div>
-        <div class="grid-box-1">5</div>
-        <div class="grid-box-2">6</div>
-        <div class="grid-box-1">7</div>
-        <div class="grid-box-2">8</div>
-        <div class="grid-box-1">9</div>
-        <div class="grid-box-2">10</div>
-        <div class="grid-box-1">11</div>
-        <div class="grid-box-2">12</div>
-        <div class="grid-box-1">13</div>
+        <input type="email" placeholder="email" required />
+        <input type="text" placeholder="password" required />
+        <input type="number" placeholder="code" min="1" max="10" />
+        <hr class="my-10" />
+        <h2>Editor Code</h2>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
       </div>
     </section>
 
-    <section class="mt-20">
-      <div class="container">
+    <section id="layout">
+      <div class="mt-20">
+        <h1 class="text-center mb-10">Learning Layouts</h1>
+
+        <div>
+          <h2 class="text-center mb-10">Flex</h2>
+          <div class="flex">
+            <!-- secara default direction row -->
+            <div class="main mr-10">Tata Letak Main</div>
+            <div class="sidebar ml-10">Tata Letak Sidebar Right</div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-center my-10">Grid</h2>
+          <div class="grid">
+            <div class="grid-box">1</div>
+            <div class="grid-box-2">2</div>
+            <div class="grid-box-1">3</div>
+            <div class="grid-box-2">4</div>
+            <div class="grid-box-1">5</div>
+            <div class="grid-box-2">6</div>
+            <div class="grid-box-1">7</div>
+            <div class="grid-box-2">8</div>
+            <div class="grid-box-1">9</div>
+            <div class="grid-box-2">10</div>
+            <div class="grid-box-1">11</div>
+            <div class="grid-box-2">12</div>
+            <div class="grid-box-1">13</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="float">
+      <div class="mt-20">
         <img src="../assets/profile.jpg" class="float" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
@@ -236,23 +243,25 @@
           cum in iste repudiandae veniam, nihil sunt reprehenderit accusamus
           dolorum animi itaque ab laborum. Totam!
         </p>
-
-        <div class="inline-block box-multi">
-          <ul class="mt-10 programming-languages">
-            <li>Javascript</li>
-            <li>PHP</li>
-            <li>Golang</li>
-            <li>Python</li>
-          </ul>
-        </div>
       </div>
     </section>
 
-    <section class="container mt-10">
-      <div class="border"></div>
+    <section id="multi-layout">
+      <div class="inline-block box-multi">
+        <ul class="mt-10 programming-languages">
+          <li>Javascript</li>
+          <li>PHP</li>
+          <li>Golang</li>
+          <li>Python</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="container">
+    <section id="border-style">
+      <div class="mt-10 border"></div>
+    </section>
+
+    <section id="logical-properties">
       <div class="rtl flex mt-10">
         <div class="logical me-10"></div>
         <div class="non-logical"></div>
@@ -264,8 +273,89 @@
       </div>
     </section>
 
-    <section class="container">
+    <section id="border-images">
       <div class="mt-10 b-images"></div>
+    </section>
+
+    <section id="shadow">
+      <div class="box mt-50 box-shadows box-setting text-shadows">Shadow</div>
+      <figure>
+        <img src="../assets/profile.jpg" class="mt-30 image" alt="" />
+      </figure>
+    </section>
+
+    <section id="focus">
+      <div class="mt-10">
+        <input type="text" placeholder="test tab now!" />
+        <a href="#focus">Test Focus</a>
+        <p class="mt-10 none"><s>Hint Important</s> (Focus Within)</p>
+      </div>
+    </section>
+
+    <section id="z-index">
+      <div class="flex">
+        <div class="mt-10 z-index relative mr-100">
+          <!-- secara default element yang terakhir adalah posisinya paling depan -->
+          <!-- z-index membuat urutan tersebut menjadi custom -->
+          <div class="absolute box-index border-index bg-blue-hex"></div>
+          <div
+            class="absolute mtl-25 box-index border-index bg-light-red"
+          ></div>
+          <div class="absolute mtl-50 box-index border-index bg-pink"></div>
+        </div>
+
+        <div class="mt-10 z-index relative mr-100">
+          <div
+            class="absolute box-index border-index bg-blue-hex -z-index-1"
+          ></div>
+          <div
+            class="absolute mtl-25 box-index border-index bg-light-red -z-index-2"
+          ></div>
+          <div
+            class="absolute mtl-50 box-index border-index bg-pink -z-index-3"
+          ></div>
+        </div>
+
+        <div class="mt-10 z-index relative">
+          <!-- when add z-index in parent relative -->
+          <!-- seharusnya bg-green paling depan karena z index paling besar -->
+          <!-- solusinya di childnya yang ditambah z-index minus -->
+          <div class="relative z-index-99999 w-200 h-200 border-index bg-green">
+            <!-- example => -z-index-1 -->
+            <div
+              class="absolute mt-10 ml-10 bg-red w-200 h-200 border-index"
+            ></div>
+            <div
+              class="relative -z-index-2 w-200 h-200 border-index bg-orange-hsl mt-20"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <div class="top bg-green z-index-1">
+          <p class="mb-10">Parent 1 : z-index-1</p>
+          <!-- seharusnya box ini paling tinggi -->
+          <div class="box-pink inner z-index-999">Child 1 : z-index-999</div>
+        </div>
+        <!-- namun terhalang karena beda parent -->
+        <div class="bottom bg-orange-hsl z-index-2">
+          <p class="mb-10">Parent 2 : z-index-2</p>
+          <div class="box-pink inner z-index-3">Child 1 : z-index-3</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="mt-50">
+        <h1>Created by. Mahmuda Karima</h1>
+        <p>
+          Last Updated &#10148;
+          <a href="https://github.com/dakasakti/html-dan-css" target="_blank"
+            >31/05/2023</a
+          >
+        </p>
+      </div>
     </section>
 
     <!-- finally -->
