@@ -448,3 +448,98 @@ Focus element otomatis => element form, button, dan tautan
 
 - parent 1 dengan parent 2 berbeda stack
 - berfungsi sesama child dari parentnya (stacking context)
+- element dengan position selain statis
+- element dengan display grid dan flex
+- element dengan opacity kurang dari 1
+- element dengan nilai mix-blend-mode selain normal
+
+## Function
+
+```
+function nameFungsi(width, height) {
+  return width * height
+}
+
+```
+
+### function selector
+
+```
+.post :is(h1, h2, h3) {
+  line-height: 1.2;
+}
+
+.post :not(h3, h4, h5) {
+  font-size: 25px;
+}
+
+```
+
+### Custom Properties and Var
+
+```
+// declaration
+:root {
+  --base-color: #000;
+}
+
+// call
+.bg-primary {
+  background: var(--base-color, hotpink);
+}
+
+```
+
+### Return Value
+
+- url()
+- attr()
+- hsl()
+- rgb(255 255 255 / 50%)
+- rgba()
+- lab()
+
+### Math Expression
+
+- calc(100% - 2rem)
+- min(20vw, 30rem)
+- max(20vh, 20rem)
+- clamp(2rem, 1rem + 3vw, 3rem)
+
+### Shapes
+
+- clip-path() => circle(), ellipse(), polygon(), path()
+- offest-path()
+- shape-outside()
+
+### Transform
+
+- rotate() => rotateX(), rotateY(), rotateZ()
+- scale() => membesarkan atau mengecilkan
+- perspective() => menentukan jarak pada posisi 3D
+
+## Gradient
+
+- Linear
+- Radial
+- Conic
+- Repeat => `repeating-<linear/radial/conic>-gradient()`,
+
+## Animation
+
+- Linear
+- Ease-In
+- Ease-Out
+- Cubic-Bezier => [Link](https://cubic-bezier.com/)
+- Steps
+
+### Direction
+
+- normal
+- reverse
+- alternate
+- alternate-reverse
+
+### Device Mobile
+
+- @media (prefers-reduced-motion)
