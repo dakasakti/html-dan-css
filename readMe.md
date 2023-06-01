@@ -543,3 +543,122 @@ function nameFungsi(width, height) {
 ### Device Mobile
 
 - @media (prefers-reduced-motion)
+
+## Filters
+
+- blur() => (% not working)
+- brightness() => (0 to n)
+- contrast() => (0 to n)
+- grayscale() => (0 to 1)
+- invert() => (0 to 1)
+- opacity() => (0 to 1)
+- saturate() => (0 to n)
+- sepia() => (0 to 1)
+- hue-rotate() => degree
+- drop-shadow(5px 5px 10px orange)
+- url()
+
+## Blend Modes
+
+- mix-blend-mode
+- background-blend-mode
+
+### Mode
+
+- Multiply
+- Screen
+- Overlay
+- Darken
+- Lighten
+- Color Dogde
+- Color Burn
+- Hard Light
+- Soft Light
+- Difference
+- Exclusion
+
+## Lists
+
+```
+display : list-item;
+```
+
+### List Styles
+
+- type
+- image
+
+## Transition
+
+- property (transform, background-color)
+- duration
+- timing-function
+- delay
+
+### Can Using
+
+- Opacity
+- Color
+- Background Colors
+- Shadow
+- Filter
+
+### Trigger
+
+- hover
+- focus
+- focus-within
+- active
+- class
+
+## Overflow
+
+- text
+
+### Property
+
+- overflow-x (horizontal => left and right)
+- overflow-y (vertical => top and bottom)
+- overflow-inline (only firefox)
+- overflow-block (only firefox)
+
+```
+overflow: x y;
+
+// example
+overflow: hidden scroll;
+```
+
+### Value
+
+- visible
+- auto
+- hidden (clip => restrict)
+- scroll
+- ellipsis
+
+### Scroll Behavior
+
+```
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-view {
+    scroll-behavior: auto;
+  }
+}
+```
+
+- auto
+- smooth
+
+### Overscroll Behavior
+
+mencegah atau menentukan scrolling dari children ke parent (chaining)
+
+- auto
+- contain
+- none
+
+## LINKS
+
+- [Tutorial](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+- [Reduce Image](https://squoosh.app/)
